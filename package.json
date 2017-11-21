@@ -1,0 +1,22 @@
+{
+  "name": "consistent-color-generation",
+  "version": "0.1.0",
+  "description": "This package generates colors given a string according to XEP-0392 0.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Klaus Herberth <klaus@jsxc.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsxc/consistent-color-generation.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "js-sha1": "^0.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
