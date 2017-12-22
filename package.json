@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "coverage": "istanbul cover mocha && codecov"
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
   },
   "author": "Klaus Herberth <klaus@jsxc.org>",
   "repository": {
