@@ -15,14 +15,14 @@ function generateAngle(identifier, correction) {
    let hash = sha1(identifier);
    let first16bits = hash.slice(0, 4);
    let littleEndian = first16bits.slice(2) + first16bits.slice(0, 2);
-   let angle = parseInt(littleEndian, 16) / 65535 * 2 * Math.PI;
+   let angle = parseInt(littleEndian, 16) / 65536 * 2 * Math.PI;
 
    switch (correction) {
       case REDGREEN:
-         angle /= 2;
+         angle = angle % Math.PI;
          break;
       case BLUE:
-         angle = (angle / 2) + (Math.PI / 2);
+         angle = ((angle - (Math.PI / 2)) % Math.PI) + (Math.PI / 2);
          break;
    }
 
