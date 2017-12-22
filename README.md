@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/jsxc/consistent-color-generation.svg?branch=master)](https://travis-ci.org/jsxc/consistent-color-generation)
+[![codecov](https://codecov.io/gh/jsxc/consistent-color-generation/branch/master/graph/badge.svg)](https://codecov.io/gh/jsxc/consistent-color-generation)
 
 # Consistent Color Generation
 This node script generates colors given a string according to [XEP-0392 0.4](https://xmpp.org/extensions/xep-0392.html#constants-ycbcr).
