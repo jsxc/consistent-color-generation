@@ -4,10 +4,6 @@ var hsluv = require('hsluv')
 const REDGREEN = 'redgreen';
 const BLUE = 'blue';
 
-function clipValueToRangeFrom0To1(value) {
-   return Math.max(0, Math.min(value, 1));
-}
-
 function generateAngle(identifier, correction) {
    let hash = sha1(identifier);
    let first16bits = hash.slice(0, 4);
