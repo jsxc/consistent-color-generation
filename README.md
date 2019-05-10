@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/consistent-color-generation.svg)](https://www.npmjs.com/package/consistent-color-generation)
 
 # Consistent Color Generation
-This node script generates colors given a string according to [XEP-0392 0.4](https://xmpp.org/extensions/xep-0392.html#constants-ycbcr).
+This node script generates colors given a string according to [XEP-0392 0.6](https://xmpp.org/extensions/xep-0392.html#constants-ycbcr).
 
 ## Features
 ### Implemented
@@ -16,7 +16,7 @@ This node script generates colors given a string according to [XEP-0392 0.4](htt
 - Mapping to a color palette
 
 ## How to use
-Install all dependencies with `npm install` and import the script as usual:
+Install all dependencies with `yarn install` and import the script as usual:
 ```
 var getRGB = require('./consistent-color-generation');
 ```
@@ -37,10 +37,10 @@ Generate color with Blue-blindness correction:
 var color = getRGB('Foobar', 'blue');
 ```
 
-You can also adjust the luminance:
+You can also adjust the saturation and lightness:
 ```
-var color = getRGB('Foobar', undefined, 0.5);
+var color = getRGB('Foobar', undefined, 80, 30);
 ```
 
 ## Development
-Install all dependencies with `npm install --dev` and run `npm test` before every commit.
+Install all dependencies with `yarn install` and run `yarn test` before every commit.
