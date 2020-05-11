@@ -1,6 +1,6 @@
 {
   "name": "consistent-color-generation",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "This package generates colors given a string according to XEP-0392 0.6",
   "main": "index.js",
   "scripts": {
