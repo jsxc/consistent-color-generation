@@ -52,3 +52,17 @@ describe('RGB generation', function() {
       runTestCasesForRGBGeneration(testVectors.blueCorrection, 'blue');
    });
 });
+
+describe('String generation', function() {
+   it('rgb color string', function() {
+      expect(getRGB('Romeo').toString()).to.be.equal('rgb(221, 0, 175)');
+      expect(getRGB('juliet@capulet.lit').toString()).to.be.equal('rgb(0, 131, 146)');
+      expect(getRGB('😺').toString()).to.be.equal('rgb(222, 0, 168)');
+   });
+
+   it('hex color string for', function() {
+      expect(getRGB('Romeo').toString('hex')).to.be.equal('#dd0af');
+      expect(getRGB('juliet@capulet.lit').toString('hex')).to.be.equal('#08392');
+      expect(getRGB('😺').toString('hex')).to.be.equal('#de0a8');
+   });
+});

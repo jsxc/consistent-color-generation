@@ -27,6 +27,12 @@ var color = getRGB('Foobar');
 // color.r, color.g, color.b
 ```
 
+Get css color string:
+```
+color.toString()      // rgb(0, 0, 0)
+color.toString('hex') // #000000
+```
+
 Generate color with Red/Green-blindness correction:
 ```
 var color = getRGB('Foobar', 'redgreen');
